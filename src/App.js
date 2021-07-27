@@ -2,6 +2,9 @@ import React, { Component, useState } from 'react';
 import './App.css';
 import Navbar from './Components/Navbar';
 import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
+import Project from './Pages/Project';
+import Study from './Pages/Study';
+import Home from './Pages/Home';
 
 class App extends Component {
   render() {
@@ -12,10 +15,13 @@ class App extends Component {
           <Navbar></Navbar>
           <Switch>
             <Route path="/" exact>
-              <div className="Container">
-                <div className="Container-Nav"></div>
-                <div className="Container-Content"></div>
-              </div>
+              <Home />
+            </Route>
+            <Route path="/project">
+              <Project />
+            </Route>
+            <Route path="/study">
+              <Study />
             </Route>
           </Switch>
         </div>
