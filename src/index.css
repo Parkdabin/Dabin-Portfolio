@@ -13,3 +13,160 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.App {
+  margin-top: 10px;
+  height: 100vh;
+  text-align: center;
+}
+
+h1{
+  color:white;
+}
+
+.Navbar{
+  margin-top: 50px;
+  margin-left: 20%;
+  margin-right: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 30px;
+  flex-flow: row wrap;
+  list-style: none;
+}
+
+
+.Container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+.Container .Nav{
+  width: 15%;
+  height: 60%;
+  
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  box-shadow: 2px 0px 5px white;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-color:rgb(59, 62, 77);
+  margin-top: 50px;
+  align-self: center;
+  z-index: 1001;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Container .Nav span{
+  font-size: 5vh;
+  color:rgb(255, 243, 221);
+}
+
+.Container .Nav button{
+  color: rgb(48, 52, 59);
+  font-weight: bold;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 50%;
+  height: 50px;
+  font-size: 20px;
+  background-color: rgb(255, 243, 221);
+}
+
+.Container .Content{
+  display: flex;
+  margin-top: 50px;
+  margin-left: -1%;
+  margin-right: -1%;
+  width: 72%;
+  border: 2px solid white;
+  border-radius: 30px;
+  box-shadow: 2px 0px 5px white;
+  z-index: 0;
+  justify-content: center;
+}
+.link{
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid rgb(255, 243, 221);
+  border-radius: 10px;
+}
+.link:link{
+  text-decoration: none;
+  color: white;
+}
+.link:visited{
+  text-decoration-line: none;
+  color: white;
+}
+.link:hover{
+  color:blanchedalmond;
+}
+
+.Navbar a:link{
+  text-decoration: none;
+  color: white;
+}
+.Navbar a:visited{
+  text-decoration-line: none;
+  color: white;
+}
+
+.Navbar a:hover{
+  color:blanchedalmond;
+}
+.Container .Content div{
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+table{
+  margin: 10px;
+  width: 90%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  margin-left: 60px;
+}
+
+table th{
+  height: 60px;
+  font-size: 26px;
+}
+
+table td{
+  width: 50%;
+  height: 60px;
+  border: 1px solid #ccc;
+  font-size: 26px;
+  vertical-align: middle;
+}
+table td:first-child{
+  width: 10%;
+}
+.btn-del{
+  background-color: transparent;
+  color: white;
+  border: 1px solid rgb(255, 243, 221);
+  width: 90px;
+  font-size: 18px;
+  margin: 20px;
+  font-weight: bold;
+  padding: 5px 20px;
+}
+.btn-del:active{
+  background-color: white;
+  color: black;
+}
+input[type="checkbox"] {
+  width: 20px;
+  height: 15px;
+}
+.off{
+  background-color: gray;
+}

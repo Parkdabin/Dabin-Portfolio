@@ -1,13 +1,12 @@
-import React, { Component, useState } from 'react';
-import './App.css';
+import React from 'react';
 import Navbar from './Components/Navbar';
-import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Project from './Pages/Project';
 import Study from './Pages/Study';
 import Home from './Pages/Home';
+import AddTodoList from './Components/AddTodoList';
 
-class App extends Component {
-  render() {
+function App (){
     return (
       <BrowserRouter>
         <div className="App">
@@ -23,11 +22,13 @@ class App extends Component {
             <Route path="/study">
               <Study />
             </Route>
+            <Route path="/add_todolist">
+              <AddTodoList />
+            </Route>
           </Switch>
         </div>
       </BrowserRouter>
     );
-  }
 }
 
 export default App;

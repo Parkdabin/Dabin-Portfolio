@@ -1,0 +1,21 @@
+{
+  "Todolist": [
+    {
+      "id": 1,
+      "Todo": "운동",
+      "deadline": "2021/08/31",
+      "isDone": false
+    },
+    {
+      "id": 2,
+      "Todo": "공부",
+      "deadline": "2021/08/20",
+      "isDone": false
+    }
+  ],
+  "good": [
+    {
+      "id": 1
+    }
+  ]
+}
