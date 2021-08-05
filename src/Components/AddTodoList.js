@@ -29,33 +29,36 @@ function AddTodoList() {
 
     }
     return (
-        <div className="Container">
-            <div className="Nav">
-                <span>Todo List</span>
-                <Link to="/todolist" className="link"> 뒤로가기</Link>
+        <>
+            <div className="Container">
+                <div className="Nav">
+                    <span>Todo List</span>
+                    <Link to="/todolist" className="link"> 뒤로가기</Link>
+                </div>
+                <div className="Content">
+                    <form>
+                        <h1 style={{ color: 'khaki' }}>List 추가</h1>
+                        <div className="input-area">
+                            <label>할 일</label>
+                            <input type="text" placeholder="운동" ref={todoRef} />
+                        </div>
+                        <div className="input-area">
+                            <label>기한</label>
+                            <input type="date" ref={dateRef} />
+                        </div>
+                        <div>
+                            <button
+                                className="btn-add"
+                                onClick={onSubmit}
+                                style={{ opacity: isLoading ? 0.3 : 1 }}>
+                                {isLoading ? "저장중." : "추가하기"}
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div className="Content">
-                <form>
-                    <h1 style={{ color: 'khaki' }}>List 추가</h1>
-                    <div className="input-area">
-                        <label>할 일</label>
-                        <input type="text" placeholder="운동" ref={todoRef} />
-                    </div>
-                    <div className="input-area">
-                        <label>기한</label>
-                        <input type="date" ref={dateRef} />
-                    </div>
-                    <div>
-                        <button
-                            className="btn-add"
-                            onClick={onSubmit}
-                            style={{ opacity: isLoading ? 0.3 : 1 }}>
-                            {isLoading ? "저장중." : "추가하기"}
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </div>
+            <div className="copyright">Copyright 2021. Dabin All Rights Resserved</div>
+        </>
     );
 }
 
