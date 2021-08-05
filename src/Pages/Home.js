@@ -9,7 +9,7 @@ function Home() {
         <div className="Container">
             <div className="Nav">
                 <span>Resume</span>
-                <Link to="" className="link">추가하기</Link>
+                <Link to="/add_profile" className="link">추가하기</Link>
             </div>
             <div className="Content" style={{ flexDirection: 'column', justifyContent: 'flex-start' }}>
                 <div className="overflow">
@@ -17,7 +17,8 @@ function Home() {
                         <ProfileBlock 
                         header1 = {profile.header1}
                         header2 = {profile.header2}
-                        content = {profile.content}/>
+                        content = {profile.content}
+                        key={profile.id}/>
                     ))}
                 </div>
             </div>

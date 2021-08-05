@@ -1,12 +1,9 @@
 import axios from 'axios';
 import React, { useState } from 'react'
-import { useHistory } from 'react-router-dom';
 
 function TodoList({list}) {
     const [lists, setLists] = useState(list);
-    const [isDone, setIsDone] = useState(list.isDone);
-    const [isLoading, setIsLoading] = useState(false);
-    const history = useHistory();
+    const [isDone, setIsDone] = useState(list.isDone);    
     function toggleDone(){
         axios.put(`http://localhost:3001/Todolist/${lists.id}`,{
             ...lists,

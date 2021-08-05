@@ -6,6 +6,8 @@ import Study from './Pages/Study';
 import Home from './Pages/Home';
 import AddTodoList from './Components/AddTodoList';
 import TodoList from './Pages/TodoList';
+import AddProfile from './Components/AddProfile';
+import EmptyPage from './Pages/EmptyPage';
 
 function App (){
     return (
@@ -28,6 +30,12 @@ function App (){
             </Route>
             <Route path="/todolist/add_todolist">
               <AddTodoList />
+            </Route>
+            <Route path="/add_profile">
+              <AddProfile />
+            </Route>
+            <Route>
+              <EmptyPage />
             </Route>
           </Switch>
         </div>

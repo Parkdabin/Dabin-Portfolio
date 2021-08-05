@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
     <div>
-      <ui className="Navbar">
+      <ul className="Navbar">
         <li><Link to="/">Home</Link></li>
         <li><Link to="/todolist">TodoList</Link></li>
         <li><Link to="/project">Project</Link></li>
         <li><Link to="/study">Study</Link></li>
-      </ui>
+      </ul>
     </div>
   );
 }

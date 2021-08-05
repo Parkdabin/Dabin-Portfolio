@@ -45,7 +45,7 @@ h1{
   display: flex;
   flex-direction: row;
 }
-.Container .Nav{
+.Nav{
   width: 15%;
   height: 60%;
   
@@ -203,35 +203,73 @@ input[type="checkbox"] {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: black;
-  height: 30%;
+  /* background-color: black; */
+  width: 96%;
+  height: auto;
   margin-top: 20px;
-  margin-left: 25px;
+  margin-left: 40px;
+  margin-right: 10px;
   border-bottom: 1px solid rgb(255, 254, 180);
   border-radius: 3px;
+  padding-bottom: 10px;
 }
 .Profile .headerbox{
   width: 100%;
+  /* background-color: azure; */
   display: flex;
   flex-direction: row;
 }
 .Profile .header1{
-  width: 40%;
-  background-color: rebeccapurple;
+  width: auto;
+  /* background-color: rebeccapurple; */
   text-align: left;
   font-size: 35px;
   font-weight: bold;
+  padding-right: 20px;
 }
 .Profile .header2{
+  width: auto;
   text-align: left;
   margin-top: 23px;
   font-size: 18px;
-  background-color: blue;
+  /* background-color: blue; */
+  padding-right: 25px;
 }
 .Profile .content{
-  background-color: red;
+  width: 98%;
+  height: auto;
+  /* background-color: red; */
   margin-top: 10px;
   margin-left: 10px;
   display: flex;
   flex-direction: column;
+}
+.header1 input{
+  height: 35px;
+  width: 400px;
+  font-size: 25px;
+}
+.header2 input{
+  width: 300px;
+  font-size: 15px;
+}
+.Profile button{
+  margin-top: 30px;
+  align-self: center;
+  background-color: gainsboro;
+  color: black;
+  border: 1px solid black;
+  border-radius: 3px;
+  width: 120px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.Profile button:active{
+  background-color: gray;
+}
+.Profile .content textarea{
+  border: 1px;
+  border-radius: 3px;
+  font-size: 20px;
 }

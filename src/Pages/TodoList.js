@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import TodoListTable from '../Components/TodoListTable';
-import useGet from '../Hooks/useGet';
 import data from '../db/data.json';
 
 function TodoList() {
