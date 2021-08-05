@@ -5,6 +5,7 @@ import Project from './Pages/Project';
 import Study from './Pages/Study';
 import Home from './Pages/Home';
 import AddTodoList from './Components/AddTodoList';
+import TodoList from './Pages/TodoList';
 
 function App (){
     return (
@@ -16,13 +17,16 @@ function App (){
             <Route path="/" exact>
               <Home />
             </Route>
-            <Route path="/project">
+            <Route path="/todolist" exact>
+              <TodoList />
+            </Route>
+            <Route path="/project" exact>
               <Project />
             </Route>
-            <Route path="/study">
+            <Route path="/study" exact>
               <Study />
             </Route>
-            <Route path="/add_todolist">
+            <Route path="/todolist/add_todolist">
               <AddTodoList />
             </Route>
           </Switch>

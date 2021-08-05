@@ -1,35 +1,25 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import TodoList from '../Components/TodoList';
-import useGet from '../Hooks/useGet';
+import ProfileBlock from '../Components/ProfileBlock';
+import data from '../db/data.json';
+import {Link} from 'react-router-dom';
 
 function Home() {
-
-    const lists = useGet("http://localhost:3001/Todolist");
+    const datas = data.Profile;
     return (
         <div className="Container">
             <div className="Nav">
-                <span>Todo List</span>
-                <Link to="/add_todolist" className="link">추가하기</Link>
+                <span>Resume</span>
+                <Link to="" className="link">추가하기</Link>
             </div>
-            <div className="Content">
-                <div>
-                    <table>
-                        <tbody>
-                            <tr>
-                                <th>상태</th>
-                                <th>할 일</th>
-                                <th>기한</th>
-                                <th></th>
-                            </tr>
-                            {lists.map(list => (
-                                <TodoList list={list} key={list.id} />
-                            ))}
-
-                        </tbody>
-                    </table>
+            <div className="Content" style={{ flexDirection: 'column', justifyContent: 'flex-start' }}>
+                <div className="overflow">
+                    {datas.map(profile =>(
+                        <ProfileBlock 
+                        header1 = {profile.header1}
+                        header2 = {profile.header2}
+                        content = {profile.content}/>
+                    ))}
                 </div>
-
             </div>
         </div>
     );
