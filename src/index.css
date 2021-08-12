@@ -41,7 +41,7 @@ h1{
 
 .Container{
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: row;
 }
@@ -187,6 +187,10 @@ input[type="checkbox"] {
   width: 97%;
   overflow-y: auto;
 }
+.overflowX{
+  width: 97%;
+  overflow-x: auto;
+}
 .input-area{
   margin-bottom: 15px;
   font-size: 30px;
@@ -204,7 +208,6 @@ input[type="checkbox"] {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  /* background-color: black; */
   width: 96%;
   height: auto;
   margin-top: 20px;
@@ -216,34 +219,37 @@ input[type="checkbox"] {
 }
 .Profile .headerbox{
   width: 100%;
-  /* background-color: azure; */
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
 }
 .Profile .header1{
-  width: auto;
-  /* background-color: rebeccapurple; */
+  width: 400px;
   text-align: left;
   font-size: 35px;
   font-weight: bold;
   padding-right: 20px;
 }
 .Profile .header2{
-  width: auto;
+  width: 350px;
   text-align: left;
   margin-top: 23px;
   font-size: 18px;
-  /* background-color: blue; */
   padding-right: 25px;
 }
+.btn-profiledel{
+  width: 150px;
+}
+
 .Profile .content{
   width: 98%;
   height: auto;
-  /* background-color: red; */
   margin-top: 10px;
   margin-left: 10px;
   display: flex;
   flex-direction: column;
+  text-align: left;
+  padding-bottom: 10px;
 }
 .header1 input{
   height: 35px;
@@ -254,7 +260,7 @@ input[type="checkbox"] {
   width: 300px;
   font-size: 15px;
 }
-.Profile button{
+.btn-profileadd{
   margin-top: 30px;
   align-self: center;
   background-color: gainsboro;
@@ -266,7 +272,7 @@ input[type="checkbox"] {
   font-size: 18px;
   font-weight: bold;
 }
-.Profile button:active{
+.btn-profileadd:active{
   background-color: gray;
 }
 .Profile .content textarea{
@@ -277,4 +283,60 @@ input[type="checkbox"] {
 .copyright{
   margin-top: 15px;
   background-color: rgb(65, 70, 80);
+}
+
+.slider{
+  width: 90%;
+  height: 95%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+
+.right-arrow{
+  font-size: 50px;
+  color: white;
+  margin-left: 50px;
+  margin-right: 50px;
+  cursor: pointer;
+}
+
+.left-arrow{
+  font-size: 50px;
+  color:white;
+  margin-right: 50px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+.slide.active{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+  
+}
+.proj-container{
+  display: flex;
+  width: 70%;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.proj-container img{
+  margin-left: 20px;
+  height: 600px;
+  border-radius: 10px;
+}
+.proj-container span{
+  margin-left: 20px;
+  text-align: start;
 }

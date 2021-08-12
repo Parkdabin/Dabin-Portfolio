@@ -1,13 +1,28 @@
+import axios from 'axios';
 import React, { useRef } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 function AddProfile() {
+    const history = useHistory();
     const header1Ref = useRef();
     const header2Ref = useRef();
     const contentRef = useRef();
 
     function onSubmit() {
         console.log(contentRef.current.value);
+        axios.post("http://localhost:3001/Profile", {
+            header1 : header1Ref.current.value,
+            header2 : header2Ref.current.value,
+            content : contentRef.current.value
+        }).then(res => {
+            if(res.statusText==='Created'){
+                alert('생성이 완료되었습니다.');
+                history.push('/');
+            }
+        }).catch(e =>{
+            alert('권한이 없습니다.');
+            history.push('/');
+        })
     }
     return (
         <>
@@ -32,7 +47,7 @@ function AddProfile() {
                             <div> 내용</div>
                             <textarea rows="10" ref={contentRef} />
                         </div>
-                        <button onClick={onSubmit}> 저장 </button>
+                        <button onClick={onSubmit} className = "btn-profileadd"> 저장 </button>
                     </div>
                 </div>
             </div>

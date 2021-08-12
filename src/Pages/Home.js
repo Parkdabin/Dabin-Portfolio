@@ -16,10 +16,8 @@ function Home() {
                     <div className="overflow">
                         {datas.map(profile => (
                             <ProfileBlock
-                                header1={profile.header1}
-                                header2={profile.header2}
-                                content={profile.content}
-                                key={profile.id} />
+                                profile={profile} 
+                                key={profile.id}/>
                         ))}
                     </div>
                 </div>
