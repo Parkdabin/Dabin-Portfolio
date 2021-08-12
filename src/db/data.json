@@ -68,5 +68,10 @@
       "content": "나는 바보야\n너는?",
       "id": 8
     }
+  ],
+  "screen" : [
+    {
+      "outline": false
+    }
   ]
 }

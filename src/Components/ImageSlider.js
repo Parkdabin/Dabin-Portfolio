@@ -21,7 +21,6 @@ function ImageSlider({ slides }) {
         <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide}/>
         
             {slides.map((slide, index) => {
-                console.log(index);
                 return (
                     <div className={index === current ? 'slide active' : 'slide'}
                         key={index}>
@@ -30,9 +29,14 @@ function ImageSlider({ slides }) {
                                 {current+1}.
                                 <img
                                     src={slide.image}
-                                    alt="travel image"
+                                    alt="project"
                                     className="image" />
-                                <span>{slide.text}</span>
+                                <span>
+                                    {slide.text}<br /> <br />
+                                    <a href="https://github.com/Parkdabin/Accountbook.git">
+                                        Git hub
+                                    </a>
+                                </span>
                             </div>
 
                         )}
