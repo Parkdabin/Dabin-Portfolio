@@ -41,7 +41,7 @@ function ProfileBlock({ profile }) {
                     <button onClick={delProfile} className="btn-del">삭제</button>
                 </div>
             </div>
-            <div className="content">{recontent()}</div>
+            <div className="content"><span>{recontent()}</span></div>
         </div>
     );
 }

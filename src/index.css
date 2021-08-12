@@ -41,7 +41,7 @@ h1{
 
 .Container{
   width: 100%;
-  height: 100%;
+  height: 110%;
   display: flex;
   flex-direction: row;
 }
@@ -250,6 +250,10 @@ input[type="checkbox"] {
   flex-direction: column;
   text-align: left;
   padding-bottom: 10px;
+}
+.Profile .content span{
+  line-height: 40px;
+  margin-left: 35px;
 }
 .header1 input{
   height: 35px;
