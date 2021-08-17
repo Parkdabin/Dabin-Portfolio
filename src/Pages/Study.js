@@ -8,7 +8,7 @@ function Study() {
 
                 </div>
                 <div className="Content">
-                    Study
+                    내일 하자
                 </div>
             </div>
             <div className="copyright">Copyright 2021. Dabin All Rights Resserved</div>
