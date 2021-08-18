@@ -8,6 +8,7 @@ import AddTodoList from './Components/AddTodoList';
 import TodoList from './Pages/TodoList';
 import AddProfile from './Components/AddProfile';
 import EmptyPage from './Pages/EmptyPage';
+import StudyListContent from './Components/StudyListContent';
 
 function App (){
     return (
@@ -28,11 +29,14 @@ function App (){
             <Route path="/study" exact>
               <Study />
             </Route>
-            <Route path="/todolist/add_todolist">
+            <Route path="/todolist/add_todolist" exact>
               <AddTodoList />
             </Route>
-            <Route path="/add_profile">
+            <Route path="/add_profile" exact>
               <AddProfile />
+            </Route>
+            <Route path="/study/:contentid">
+              <StudyListContent />
             </Route>
             <Route>
               <EmptyPage />

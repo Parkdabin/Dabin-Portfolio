@@ -32,5 +32,25 @@
       "content": "2016. 08. OCJP\n 2021. 06. 정보처리기사",
       "id": 8
     }
+  ],
+  "StudyList": [
+    {
+      "id": 2,
+      "title": "React",
+      "date" : "2021-08-21",
+      "content" : "hellofew\nfewnkfwe"
+    },
+    {
+      "id": 3,
+      "title": "Rffeact",
+      "date" : "2021-08-21",
+      "content" : "hellogfdgd"
+    },
+    {
+      "id": 4,
+      "title": "Rffeact",
+      "date" : "2021-08-21",
+      "content" : "hellogfdgd"
+    }
   ]
 }

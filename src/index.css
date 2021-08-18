@@ -385,3 +385,55 @@ input[type="checkbox"] {
   color: rgb(217, 231, 192);
   font-size: 1.2rem;
 }
+
+.studylist{
+  background-color:azure;
+  margin-top: 50px;
+  width: 90%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 2px solid gray;
+  border-radius: 10px;
+  box-shadow: 2px 2px gray;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+.studylist h1, h3{
+  color: black;
+  margin-left: 100px;
+}
+.btn-studylistdel{
+  position: absolute;
+  left: 75%;
+  width: 90px;
+  padding: 10px;
+  font-size: 18px;
+  background-color: transparent;
+  border: 1px solid red;
+  font-weight: bold;
+}
+.btn-studylistdel:active{
+  background-color: red;
+  color: white;
+}
+.studycontentlink{
+  display: flex;
+  text-decoration: none;
+  width: 100%;
+}
+
+.studycontent{
+  margin-top: 50px;
+  width: 90%;
+  border-radius: 10px;
+}
+.studycontent h1{
+  font-size: 60px;
+  color:rgb(217, 231, 192);
+}
+.studycontent span{
+  font-size: 25px;
+}
+
