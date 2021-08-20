@@ -12,7 +12,7 @@ function Study() {
                     <span>Study List</span>
                     <Link to="/study/addstudylist" className="link"> 추가하기</Link>
                 </div>
-                <div className="Content" style={{flexDirection:'column', justifyContent:'flex-start', alignItems:'center'}}>
+                <div className="Content" style={{flexDirection:'column', justifyContent:'flex-start', alignItems:'center', overflow:'auto'}}>
                     {studylist.map(lists => (
                         <StudyList lists= {lists} key={lists.id}></StudyList>
 

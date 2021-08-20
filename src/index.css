@@ -256,15 +256,21 @@ input[type="checkbox"] {
   margin-left: 35px;
 }
 .header1 input{
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 10px;
   height: 35px;
   width: 400px;
   font-size: 25px;
 }
 .header2 input{
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
   width: 300px;
   font-size: 15px;
 }
-.btn-profileadd{
+.btn-save{
   margin-top: 30px;
   align-self: center;
   background-color: gainsboro;
@@ -276,12 +282,13 @@ input[type="checkbox"] {
   font-size: 18px;
   font-weight: bold;
 }
-.btn-profileadd:active{
+.btn-save:active{
   background-color: gray;
 }
 .Profile .content textarea{
-  border: 1px;
-  border-radius: 3px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 10px;
   font-size: 20px;
 }
 .copyright{
@@ -379,34 +386,39 @@ input[type="checkbox"] {
 .projoutline span{
   text-align: left;
   margin-top: 20px;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 150px;
+  margin-right: 150px;
   line-height: 50px;
   color: rgb(217, 231, 192);
   font-size: 1.2rem;
 }
 
 .studylist{
-  background-color:azure;
+  background-color:rgb(201, 236, 228);
   margin-top: 50px;
   width: 90%;
-  height: 15%;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   border: 2px solid gray;
   border-radius: 10px;
   box-shadow: 2px 2px gray;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   cursor: pointer;
 }
-.studylist h1, h3{
+.studylist:hover{
+  background-color:rgb(140, 230, 209);
+}
+.studylist h2{
+  margin-left: 60px;
   color: black;
+}
+.studylist h3{
+  color: rgb(89, 92, 87);
   margin-left: 100px;
 }
 .btn-studylistdel{
-  position: absolute;
-  left: 75%;
   width: 90px;
   padding: 10px;
   font-size: 18px;
@@ -421,8 +433,9 @@ input[type="checkbox"] {
 .studycontentlink{
   display: flex;
   text-decoration: none;
-  width: 100%;
+  width: 90%;
 }
+
 
 .studycontent{
   margin-top: 50px;
@@ -430,10 +443,40 @@ input[type="checkbox"] {
   border-radius: 10px;
 }
 .studycontent h1{
-  font-size: 60px;
+  font-size: 50px;
   color:rgb(217, 231, 192);
+  margin-bottom: 90px;
 }
-.studycontent span{
+.studycontent div{
+  text-align: left;
   font-size: 25px;
 }
 
+.addstudylist{
+  font-size: 25px;
+  margin-top: 50px;
+  width: 80%;
+  display: flex;
+  flex-flow: column wrap;
+}
+.addstudylist label{
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.addstudylist input{
+  height: 35px;
+  color: white;
+  font-size: 25px;
+  background-color: transparent;
+  margin-bottom: 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+.addstudylist textarea{
+  color: white;
+  background-color: transparent;
+  font-size: 25px;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}

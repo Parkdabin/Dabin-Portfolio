@@ -14,10 +14,10 @@ function StudyListContent() {
     }
     const showTitleContent = studylists.find(isTitleContent);
     function recontent(){
-        showTitleContent.content = StrReplace(showTitleContent.content, '\n', (match)=> (
-            <br />
+        const txt = StrReplace(showTitleContent.content, '\n', (match,i)=> (
+            <br key={i}/>
         ))
-        return showTitleContent.content
+        return txt;
     }
     return (
         <>
@@ -26,10 +26,10 @@ function StudyListContent() {
                     <span>Study Content</span>
                     <Link to="/study" className="link">뒤로가기</Link>
                 </div>
-                <div className="Content" style={{ flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center' }}>
+                <div className="Content" style={{ flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center' , overflow:'auto'}}>
                     <div className="studycontent">
                         <h1>{showTitleContent.title}</h1>
-                        <span>{recontent()}</span>
+                        <div style={{marginBottom:'30px'}}>{recontent()}</div>
                     </div>
                 </div>
             </div>

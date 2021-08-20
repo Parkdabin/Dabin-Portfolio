@@ -35,22 +35,28 @@
   ],
   "StudyList": [
     {
-      "id": 2,
-      "title": "React",
-      "date" : "2021-08-21",
-      "content" : "hellofew\nfewnkfwe"
+      "title": "React의 생명주기 Cycle",
+      "date": "2021/8/20",
+      "content": "1) constructor\n2) componentWillMount()\n3) render()\n4) componentDidMount() => API 호출을 수행하면 효과적이다.\n\nuseEffect() => componentWillMount()와 componentDidMount(), componentDidUpdate()가 합쳐진 것으로 볼 수 있다.",
+      "id": 1
     },
     {
-      "id": 3,
-      "title": "Rffeact",
-      "date" : "2021-08-21",
-      "content" : "hellogfdgd"
+      "title": "React Hooks",
+      "date": "2021/8/20",
+      "content": "React Hook이란?\n = 컴포넌트에서 상태관련 로직을 사용할 때 레이어 변화 없이 재사용할 수 있도록 하기 위해 사용한다. 컴포넌트를 함수 단위로 잘게 쪼갤 수 있다는 이점이 있다.\n - useState\n 가장 기본적인 Hook이며, 함수형 컴포넌트에서 가변적인 상태를 지닐 수 있게 해 준다.\n\n - useEffect\n 컴포넌트가 렌더링 될 때마다 특정 작업을 수행하도록 설정할 수 있는 Hook이다. 이 훅을 통해서 함수형 컴포넌트에서 데이터 가져오기, 구독 설정, 수동으로 DOM 조작 등을 할 수 있다.\n\n - useReducer\n useState보다 더 다양한 컴포넌트 상황에 따라 다양한 상태를 다른 값으로 업데이트 해주고 싶을 때 사용하는 Hook이다.\n\n - useMemo\n useMemo를 사용하면 함수형 컴포넌트 내부에서 발생하는 연산을 최적화할 수 있다. useMemo는 의존성이 변경되었을 때만 메모이제이션 된 값을 다시 계산한다. 이 최적화는 모든 렌더링 시 고비용 계산을 방지하게 해 준다.\n\n - useCallback\n useCallback은 메모이제이션 된 콜백을 반환한다. 주로 렌더링 성능을 최적화 해야 하는 상황에서 사용하는데, 이 Hook을 통해서 이벤트 핸들러 함수를 필요할 때만 생성할 수 있다.\n\n - useRef\n useRef는 함수형 컴포넌트에서 ref를 쉽게 사용할 수 있도록 해준다. useRef는 .current 프로퍼티로 전달된 인자(initialValue)로 초기화된 변경 가능한 ref 객체를 반환한다.\n\n * DOM = 문서객체모델(The Document Object Model), 문서의 구조화된 표현을 제공하며 프로그래밍 언어가 DOM 구조에 접근할 수 있는 방법을 제공하여 그들이 문서 구조, 스타일, 내용 등을 변경할 수 있게 돕는다. 웹 페이지를 스크립트 또는 프로그래밍 언어들에서 사용될 수 있게 연결 시켜주는 역할을 담당한다.\n\n * 메모제이션 =  컴퓨터 프로그램이 동일한 계산을 반복해야 할 때, 이전에 계산한 값을 메모리에 저장함으로써 동일한 계산의 반복 수행을 제거하여 프로그램 실행 속도를 빠르게 하는 기술",
+      "id": 2
     },
     {
-      "id": 4,
-      "title": "Rffeact",
-      "date" : "2021-08-21",
-      "content" : "hellogfdgd"
+      "title": "React 함수형과 클래스형의 차이",
+      "date": "2021/8/20",
+      "content": " - 과거에는 클래스형 컴포넌트를 주로 사용했지만, 2019년 v16.8 부터 함수형 컴포넌트에 리액트 훅(hook)을 지원해 주어서 현재는 공식 문서에서 함수형 컴포넌트와 훅을 함께 사용할 것을 권장하고 있다.\n\n - 함수형 컴포넌트는 클래스형 컴포넌트보다 선언하기가 좀 더 편하고, 메모리 자원을 덜 사용한다는 장점이 있다.\n\n - 함수형 컴포넌트든 클래스형 컴포넌트든 state를 직접 조작하는 것이 아닌, setState나 useState와 같은 함수를 반드시 사용하여 조작해야 한다.",
+      "id": 3
+    },
+    {
+      "title": "REST API",
+      "date": "2021/8/20",
+      "content": " - REST(Representational State Transfer) API란 REST 아키텍처의 제약 조건을 준수하는 애플리케이션 프로그래밍 인터페이스를 뜻한다.\n\n - 자원을 이름(자원의 표현)으로 구분하여 해당 자원의 상태(정보)를 주고 받는 모든 것을 의미한다.\n\n- REST는 기본적으로 웹의 기존 기술과 HTTP 프로토콜을 그대로 활용하기 때문에 웹의 장점을 최대한 활용할 수 있는 아키텍처 스타일이다. REST는 네트워크 상에서 Client와 Server 사이의 통신 방식 중 하나이다.\n\n- 쉽게 설명하면 Uri 주소와 메소드로 CRUD(Create, Read, Update, Delete)요청을 하는 것이다.",
+      "id": 4
     }
   ]
 }

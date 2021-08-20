@@ -47,7 +47,7 @@ function AddProfile() {
                             <div> 내용</div>
                             <textarea rows="10" ref={contentRef} />
                         </div>
-                        <button onClick={onSubmit} className = "btn-profileadd"> 저장 </button>
+                        <button onClick={onSubmit} className = "btn-save"> 저장 </button>
                     </div>
                 </div>
             </div>

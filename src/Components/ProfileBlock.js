@@ -23,8 +23,8 @@ function ProfileBlock({ profile }) {
         return null;
     }
     function recontent() {
-        txt = StrReplace(profile.content, '\n', (match) => (
-            <br />
+        txt = StrReplace(profile.content, '\n', (match,i) => (
+            <br key={i}/>
         ));
         return txt;
     }
