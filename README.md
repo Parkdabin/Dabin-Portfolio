@@ -1,10 +1,7 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
+# node.js를 이용하여 create-react-app를 사용해 개발하였으며 실행을 위해 터미널에 npm run start를 입력
+## CRUD 작업을 위해 json-server를 이용하였으며 json-server를 실행하기 위해 터미널에 npm install -g json-server를 설치
+## 터미널에 json-server --watch src/db/data.json --port 3001을 입력 후 CRUD 테스트
+## 스크립트 실행 오류 시 윈도우 파워쉘 -> Set-ExecutionPolicy RemoteSigned 설정
 
 ### `npm start`
 
